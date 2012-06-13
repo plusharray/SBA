@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_height="wrap_content" android:id="@+id/textView1" android:textSize="16sp" android:textStyle="bold" android:layout_width="fill_parent" android:text="@string/coordinate_pair_example" android:layout_alignParentTop="true" android:paddingLeft="10dp"></TextView>
+    <Button android:id="@+id/button1" android:layout_below="@+id/textView1" android:layout_alignRight="@+id/textView1" android:text="@string/ex_53.5_117.2" android:layout_height="35dp" android:gravity="left" android:layout_width="fill_parent"></Button>
+    <TextView android:layout_height="wrap_content" android:layout_below="@+id/button1" android:id="@+id/textView2" android:textSize="11sp" android:text="@string/lat_long_delimited_by_comma" android:layout_width="fill_parent" android:paddingLeft="10dp"></TextView>
+    <TextView android:layout_height="wrap_content" android:layout_below="@+id/textView2" android:layout_width="wrap_content" android:id="@+id/textView3" android:textSize="16sp" android:textStyle="bold" android:text="@string/longitude_without_accepted" android:paddingLeft="10dp"></TextView>
+    <Button android:id="@+id/button2" android:layout_below="@+id/textView3" android:layout_alignLeft="@+id/textView3" android:text="@string/ex_53.5_117.2b" android:layout_height="35dp" android:gravity="left" android:layout_width="fill_parent"></Button>
+    <TextView android:layout_height="wrap_content" android:layout_below="@+id/button2" android:layout_width="wrap_content" android:id="@+id/textView4" android:layout_alignLeft="@+id/button2" android:textSize="11sp" android:text="@string/symbol_is_not_required_for_long" android:paddingLeft="10dp"></TextView>
+</RelativeLayout>

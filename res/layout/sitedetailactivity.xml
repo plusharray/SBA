@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  <LinearLayout
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:orientation="vertical">
+    <RelativeLayout android:layout_width="fill_parent" android:id="@+id/relativeLayout1" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/ImageView_SiteThumbnail" android:visibility="gone" android:adjustViewBounds="true"
+        android:layout_width="93sp"
+        android:layout_height="93sp"
+	   	android:layout_marginTop="6sp"
+	   	android:layout_marginLeft="6sp" 
+    	android:layout_marginRight="6sp"></ImageView>
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ImageView_SiteThumbnail" android:orientation="vertical" android:layout_width="fill_parent" android:padding="5.0px">
+            <TextView android:layout_width="fill_parent" android:textStyle="bold" android:textSize="16sp" android:layout_height="wrap_content" android:layout_weight="1.0" android:id="@+id/TextView_SiteName" android:text="Loading..." android:gravity="right" android:padding="2.0px"></TextView>
+            <TextView android:layout_width="fill_parent" android:textSize="16sp" android:layout_height="wrap_content" android:layout_weight="1.0" android:id="@+id/TextView_SiteCode" android:text="Loading..." android:gravity="right" android:padding="2.0px"></TextView>
+            <TextView android:layout_width="fill_parent" android:textSize="16sp" android:layout_height="wrap_content" android:layout_weight="1.0" android:id="@+id/TextView_SiteAddress1" android:text="Loading..." android:gravity="right" android:padding="2.0px"></TextView>
+            <TextView android:layout_width="fill_parent" android:textSize="16sp" android:layout_height="wrap_content" android:layout_weight="1.0" android:id="@+id/TextView_SiteAddress2" android:text="Loading..." android:gravity="right" android:padding="2.0px"></TextView>
+        </LinearLayout>
+    </RelativeLayout>
+    <TableLayout android:layout_width="fill_parent" android:id="@+id/TableLayout_SiteDetails" android:layout_weight="1.0" android:layout_height="fill_parent">
+        <TableRow android:layout_width="wrap_content" android:id="@+id/TableRow_Header_SiteDetails" android:layout_height="wrap_content" android:gravity="top">
+            <TextView android:layout_width="fill_parent" android:textStyle="bold" android:layout_height="wrap_content" android:id="@+id/TextView_Title_SiteDetails" android:text="Site Details" android:gravity="top|center_horizontal" android:layout_weight="1.0"></TextView>
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:id="@+id/TableRow_SiteLayer" android:layout_height="wrap_content" android:padding="5.0px">
+            <TextView android:id="@+id/TextView_Title_SiteLayer" android:layout_height="wrap_content" android:text="@string/LABEL_LAYER" android:layout_width="wrap_content" android:gravity="left"></TextView>
+            <TextView android:gravity="right" android:textSize="16sp" android:id="@+id/TextView_SiteLayer" android:layout_height="wrap_content" android:text="Loading..." android:layout_width="wrap_content" android:layout_weight="1.0"></TextView>
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5.0px" android:id="@+id/TableRow_SiteStatus">
+            <TextView android:layout_height="wrap_content" android:text="@string/LABEL_STATUS" android:id="@+id/TextView_Title_SiteStatus" android:layout_width="wrap_content" android:gravity="left"></TextView>
+            <TextView android:textSize="16sp" android:id="@+id/TextView_SiteStatus" android:layout_height="wrap_content" android:text="Loading..." android:gravity="right|center_horizontal" android:layout_width="wrap_content" android:layout_weight="1.0"></TextView>
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5.0px" android:id="@+id/TableRow_SiteCoordinates">
+            <TextView android:id="@+id/TextView01" android:layout_height="wrap_content" android:text="@string/LABEL_COORDINATES" android:layout_width="wrap_content" android:gravity="left"></TextView>
+            <TextView android:gravity="right|center_horizontal" android:textSize="16sp" android:id="@+id/TextView_SiteCoordinates" android:layout_height="wrap_content" android:text="Loading..." android:layout_width="wrap_content" android:layout_weight="1.0"></TextView>
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5.0px" android:id="@+id/TableRow_SiteType">
+            <TextView android:id="@+id/TextView06" android:layout_height="wrap_content" android:text="@string/LABEL_TYPE" android:layout_width="wrap_content" android:gravity="left"></TextView>
+            <TextView android:gravity="right" android:textSize="16sp" android:layout_height="wrap_content" android:text="Loading..." android:id="@+id/TextView_SiteType" android:layout_width="wrap_content" android:layout_weight="1.0"></TextView>
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:id="@+id/TableRow_SiteHeight" android:layout_height="wrap_content" android:padding="5.0px">
+            <TextView android:id="@+id/TextView02" android:layout_height="wrap_content" android:text="@string/LABEL_HEIGHT" android:layout_width="wrap_content" android:gravity="left"></TextView>
+            <TextView android:gravity="right|center_horizontal" android:textSize="16sp" android:layout_height="wrap_content" android:text="Loading..." android:id="@+id/TextView_SiteHeight" android:layout_width="wrap_content" android:layout_weight="1.0"></TextView>
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:id="@+id/TableRow_SiteAGL" android:layout_height="wrap_content" android:padding="5.0px">
+            <TextView android:id="@+id/TextView07" android:layout_height="wrap_content" android:text="@string/LABEL_AGL" android:layout_width="wrap_content" android:gravity="left"></TextView>
+            <TextView android:gravity="right|center_horizontal" android:textSize="16sp" android:layout_height="wrap_content" android:text="Loading..." android:id="@+id/TextView_SiteElevation" android:layout_width="wrap_content" android:layout_weight="1.0"></TextView>
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5.0px" android:id="@+id/TableRow_SiteMTA">
+            <TextView android:layout_height="wrap_content" android:id="@+id/TextView09" android:text="@string/LABEL_MTA" android:layout_width="wrap_content" android:gravity="left"></TextView>
+            <TextView android:textSize="16sp" android:layout_height="wrap_content" android:text="Loading..." android:id="@+id/TextView_SiteMTA" android:gravity="right" android:layout_width="wrap_content" android:layout_weight="1.0"></TextView>
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5.0px" android:id="@+id/TableRow_SiteBTA">
+            <TextView android:id="@+id/TextView08" android:layout_height="wrap_content" android:text="@string/LABEL_BTA" android:layout_width="wrap_content" android:gravity="left"></TextView>
+            <TextView android:gravity="right|center_horizontal" android:textSize="16sp" android:layout_height="wrap_content" android:text="Loading..." android:id="@+id/TextView_SiteBTA" android:layout_width="wrap_content" android:layout_weight="1.0"></TextView>
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:id="@+id/TableRow_Logo" android:layout_height="wrap_content" android:gravity="center" android:padding="5.0px">
+            <ImageView android:layout_width="fill_parent" android:id="@+id/ImageView_SBALogo" android:src="@drawable/logo" android:layout_height="wrap_content"></ImageView>
+        </TableRow>
+        <TableRow android:id="@+id/TableRow_SubmitInquiryButton" android:layout_height="wrap_content" android:layout_width="fill_parent" android:padding="5.0px" android:gravity="bottom|center_horizontal">
+            <Button android:layout_width="fill_parent" android:visibility="visible" android:id="@+id/Button_SubmitInquiry" android:layout_height="wrap_content" android:text="Submit Inquiry" android:layout_weight="1.0"></Button>
+        </TableRow>
+    </TableLayout>
+    </LinearLayout>
+</ScrollView>

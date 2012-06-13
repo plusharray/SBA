@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sbasite.view.LayerListItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_item_background"
+    >
+	<ImageView
+	   	android:id="@+id/layer_pin_icon"
+	   	android:layout_width="32px"
+	   	android:layout_height="39px"
+	   	android:adjustViewBounds="true"
+	   	android:layout_marginTop="6sp"
+	   	android:layout_marginLeft="6sp" 
+    	android:layout_marginRight="6sp" />
+	<TextView
+	   	android:id="@+id/layer_layer_name"
+	   	android:layout_width="wrap_content"
+	   	android:layout_height="wrap_content"
+	   	android:layout_marginTop="6dip"
+	   	android:layout_marginBottom="6dip"
+    	android:layout_toRightOf="@id/layer_pin_icon"/>
+	<TextView
+	   	android:id="@+id/layer_active"
+	   	android:layout_width="wrap_content"
+	   	android:layout_height="wrap_content"
+    	android:layout_below="@+id/layer_layer_name"
+    	android:layout_toRightOf="@id/layer_pin_icon" 
+    	android:paddingBottom="6sp" 
+    	/>
+</com.sbasite.view.LayerListItemView>

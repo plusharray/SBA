@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:id="@+id/textView1" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="@string/site_name_examples" 
+		android:textStyle="bold" 
+		android:layout_alignParentTop="true" 
+		android:paddingLeft="10dp" 
+		android:textSize="16sp">
+	</TextView>
+		<Button android:id="@+id/button1" 
+			android:text="@string/ex_shadow" 
+			android:layout_width="fill_parent" 
+			android:layout_below="@+id/textView1" 
+			android:gravity="left" 
+			android:layout_height="35dp" 
+			android:textSize="14sp" 
+			android:paddingLeft="10dp">
+		</Button>
+		<TextView android:id="@+id/textView2" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_below="@+id/button1" 
+			android:text="@string/partial_site_name_search" 
+			android:paddingLeft="10dp" android:textSize="11sp">
+		</TextView>
+		<Button android:id="@+id/button2" 
+			android:layout_below="@+id/textView2" 
+			android:text="@string/ex_hackberry" 
+			android:textSize="14sp" 
+			android:layout_width="fill_parent" 
+			android:gravity="left" 
+			android:paddingLeft="10dp" 
+			android:layout_height="35dp">
+		</Button>
+		<TextView android:id="@+id/textView5" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:text="@string/full_site_name_search" 
+			android:layout_below="@+id/button2" 
+			android:paddingLeft="10dp" android:textSize="11sp">
+		</TextView>
+		<TextView android:id="@+id/textView6" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_below="@+id/textView5" 
+			android:text="@string/site_id_examples" 
+			android:textStyle="bold" 
+			android:paddingLeft="10dp" 
+			android:textSize="16sp">
+		</TextView>
+		<Button android:id="@+id/button3" 
+			android:gravity="left" 
+			android:paddingLeft="10dp" 
+			android:textSize="14sp" 
+			android:layout_height="35dp" 
+			android:layout_width="fill_parent" 
+			android:layout_below="@+id/textView6" 
+			android:text="@string/ex_fl">
+		</Button>
+		<TextView android:id="@+id/textView8" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:text="@string/site_id_partial_search" 
+			android:layout_below="@+id/button3" 
+			android:paddingLeft="10dp" android:textSize="11sp">
+		</TextView>
+		<Button android:id="@+id/button4" 
+			android:gravity="left" 
+			android:paddingLeft="10dp" 
+			android:textSize="14sp" 
+			android:layout_height="35dp" 
+			android:layout_width="fill_parent" 
+			android:layout_below="@+id/textView8" 
+			android:text="@string/ex_fl98463_l">
+		</Button>
+		<TextView android:id="@+id/textView10" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:text="@string/site_id_exact_search" 
+			android:layout_below="@+id/button4" 
+			android:paddingLeft="10dp" android:textSize="11sp">
+		</TextView>
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+	<Button android:layout_height="wrap_content" 
+		android:id="@+id/Button01" 
+		android:layout_width="fill_parent" 
+		android:text="@string/site_name_id" 
+		android:gravity="left|center_vertical">
+	</Button>
+	<Button android:layout_height="wrap_content" 
+		android:id="@+id/Button02" 
+		android:layout_width="fill_parent" 
+		android:layout_below="@+id/Button01" 
+		android:gravity="left|center_vertical" 
+		android:text="@string/coordinates">
+	</Button>
+	<Button android:layout_below="@+id/Button02" 
+		android:layout_height="wrap_content" 
+		android:id="@+id/Button03" 
+		android:layout_width="wrap_content" 
+		android:layout_alignLeft="@+id/Button02" 
+		android:layout_alignRight="@+id/Button02" 
+		android:gravity="left|center_vertical" 
+		android:text="@string/address">
+	</Button>
+	<Button android:layout_height="wrap_content" 
+		android:id="@+id/Button04" 
+		android:layout_below="@+id/TextView02" 
+		android:layout_width="fill_parent" 
+		android:text="@string/about_sba_communications" 
+		android:gravity="left|center_vertical">
+	</Button> 
+	<Button android:layout_height="wrap_content" 
+		android:id="@+id/Button05" 
+		android:layout_below="@+id/Button04" 
+		android:layout_width="fill_parent" 
+		android:text="@string/app_version" 
+		android:gravity="left|center_vertical">
+	</Button>
+	<TextView android:layout_height="wrap_content" 
+		android:id="@+id/TextView01" 
+		android:layout_width="wrap_content" 
+		android:layout_below="@+id/Button07" 
+		android:text="@string/support" 
+		android:textSize="16sp" 
+		android:textStyle="bold">
+	</TextView>
+	<Button android:layout_height="wrap_content" 
+		android:id="@+id/Button07" 
+		android:layout_width="fill_parent" 
+		android:layout_below="@+id/Button06" 
+		android:text="@string/database_updates" 
+		android:gravity="left|center_vertical">
+	</Button>
+	<Button android:layout_height="wrap_content" 
+		android:id="@+id/Button06" 
+		android:layout_below="@+id/Button05" 
+		android:layout_width="fill_parent" 
+		android:text="@string/database_version" 
+		android:gravity="left|center_vertical">
+	</Button>
+	<Button android:layout_height="wrap_content" 
+		android:id="@+id/Button08" 
+		android:layout_width="fill_parent" 
+		android:layout_below="@+id/TextView01" 
+		android:gravity="left|center_vertical" 
+		android:text="@string/email_support">
+	</Button>
+	<TextView android:id="@+id/TextView02" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_below="@+id/Button03" 
+		android:text="@string/about" 
+		android:textSize="16sp" 
+		android:textStyle="bold">
+	</TextView>
+</RelativeLayout>
+	
