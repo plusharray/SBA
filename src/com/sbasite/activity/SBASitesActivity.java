@@ -1,5 +1,7 @@
 package com.sbasite.activity;
 
+import java.util.Map;
+
 import greendroid.app.GDActivity;
 import greendroid.widget.ActionBarItem;
 import greendroid.widget.ActionBarItem.Type;
@@ -173,6 +175,7 @@ public class SBASitesActivity extends GDActivity {
 	protected void onResume() {
 		super.onResume(); 
 		map.unpause();
+		
 	}
 
 	@Override
@@ -304,6 +307,21 @@ public class SBASitesActivity extends GDActivity {
 			 */
 		} else {
 			super.onActivityResult(requestCode, resultCode, data);
+			
+			Boolean mapMode = getSBASitesApplication().getMapMode();
+			if (mapMode) {
+				baseLayer.setMapStyle(MapStyle.AerialWithLabels);
+			} else {
+				baseLayer.setMapStyle(MapStyle.Road);
+			}
+			baseLayer.refresh();
+			
+			map.removeLayer(dynamicLayer);
+			dynamicLayer = new ArcGISDynamicMapServiceLayer(
+					DYNAMIC_MAP_SERVICE_URL, getSBASitesApplication().getActiveLayerIDs());
+			map.addLayer(dynamicLayer);
+			
+			dynamicLayer.refresh();
 		}
 	}
 
