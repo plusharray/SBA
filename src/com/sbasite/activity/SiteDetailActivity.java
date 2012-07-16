@@ -49,7 +49,6 @@ public class SiteDetailActivity extends Activity implements LoadImageAsyncTaskRe
 		super.onCreate(savedInstanceState);
 		site = (IdentifyResult) getIntent().getSerializableExtra("SITE");
 		setContentView(R.layout.sitedetailactivity);
-		setupViews();
 	}
 
 //	@Override
@@ -87,7 +86,6 @@ public class SiteDetailActivity extends Activity implements LoadImageAsyncTaskRe
 				emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, (String)site.getAttributes().get("SiteName"));
 				emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, site.getAttributes().toString());
 				startActivity(Intent.createChooser(emailIntent, "Send mail..."));
-				finish();
 			}
         });
         
@@ -98,6 +96,7 @@ public class SiteDetailActivity extends Activity implements LoadImageAsyncTaskRe
 	@Override
 	  protected void onResume() {
 	    super.onResume();
+	    setupViews();
 	}
 	
 	private void refreshViews() {
