@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="com.sbasite"
-      android:versionCode="21"
-      android:versionName="2.0.2">
+      android:versionCode="24"
+      android:versionName="2.0.5">
     <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="8"/>
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -51,7 +51,7 @@
 			android:screenOrientation="portrait" android:name=".activity.AboutSbaCommunications">
 		</activity>
 		<activity android:label="Search" android:screenOrientation="portrait"
-			android:launchMode="singleTask" android:name=".activity.SearchListActivity"
+			android:launchMode="standard" android:name=".activity.SearchListActivity"
 			android:theme="@style/Theme.OTweet">
 			<intent-filter>
 				<action android:name="android.intent.action.SEARCH" />

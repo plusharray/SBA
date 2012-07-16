@@ -9,7 +9,14 @@ import com.sbasite.model.Site;
 import greendroid.app.GDApplication;
 
 public class SBAApplication extends GDApplication {
-	
+
+
+
+	private static ArrayList<SBALayer> layers = new ArrayList<SBALayer>();
+	private static final ArrayList<Site> sites = new ArrayList<Site>();
+	private static Boolean mapMode = false;
+	private static SearchResult searchResult = null;
+
 	@Override
 	public void onCreate() {
 		super.onCreate();
@@ -17,17 +24,12 @@ public class SBAApplication extends GDApplication {
 			layers.add(new SBALayer(i));
 		}
 	}
-
-	private static ArrayList<SBALayer> layers = new ArrayList<SBALayer>();
-	private static final ArrayList<Site> sites = new ArrayList<Site>();
-	private static Boolean mapMode = false;
-	private static SearchResult searchResult = null;
-
-	public static synchronized SearchResult getSearchResult() {
+	
+	public static SearchResult getSearchResult() {
 		return searchResult;
 	}
 
-	public static synchronized void setSearchResult(SearchResult searchResult) {
+	public static void setSearchResult(SearchResult searchResult) {
 		SBAApplication.searchResult = searchResult;
 	}
 
@@ -35,7 +37,7 @@ public class SBAApplication extends GDApplication {
 		// TODO Auto-generated method stub
 		return layers;
 	}
-	
+
 	public int[] getActiveLayerIDs() {
 		ArrayList<SBALayer> activeLayers = new ArrayList<SBALayer>();
 		for (SBALayer layer : layers) {

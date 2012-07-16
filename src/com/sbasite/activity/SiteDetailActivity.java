@@ -52,11 +52,12 @@ public class SiteDetailActivity extends Activity implements LoadImageAsyncTaskRe
 		setupViews();
 	}
 
-	@Override
-	public void onBackPressed() {
-		super.onBackPressed();
-		finish();
-	}
+//	@Override
+//	public void onBackPressed() {
+//		super.onBackPressed();
+//		site = null;
+//		finish();
+//	}
 
 	private void setupViews() {
 		siteNameTextView = (TextView)findViewById(R.id.TextView_SiteName);

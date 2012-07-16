@@ -35,7 +35,7 @@ public class SearchResult implements Parcelable {
 		super();
 		this.type = RESULT_ADDRESS;
 		this.title = address.getAddressLine(0);
-		this.coordinates = getPoint(address.getLatitude()*1000000.0, address.getLongitude()*1000000.0);
+		this.coordinates = getPoint(address.getLatitude(), address.getLongitude());
 	}
 
 	public SearchResult(Double latitude, Double longitude) {

@@ -57,7 +57,7 @@ public class SBASitesActivity extends GDActivity {
 	// searching purpose. It is also used to construct the extent which
 	// map zooms to after the first GPS fix is retrieved.
 	final static double SEARCH_RADIUS = 5;
-
+	private Intent myIntent;
 	private static final String APP_ID = "AvW9D5g6eoK0VY4L5oplesIcHsNTrOMdZxSD4mxY2vqRtzMLHAcEA4U90jtJBErj";
 	private static final String DYNAMIC_MAP_SERVICE_URL = "http://mapservices.sbasite.com/ArcGIS/rest/services/Google/MobileiOS/MapServer";
 
@@ -167,26 +167,54 @@ public class SBASitesActivity extends GDActivity {
 		});
 	}
 
+	@Override
 	protected void onPause() {
 		super.onPause();
 		map.pause();
 	}
 
+	@Override
 	protected void onResume() {
 		super.onResume(); 
 		map.unpause();
-		
+
+	}
+	
+	
+	
+	@Override
+	protected void onPostResume() {
+		// TODO Auto-generated method stub
+		super.onPostResume();
+		if (map.isLoaded()) {
+    		if (SBAApplication.getSearchResult() != null) {
+    			SearchResult result = SBAApplication.getSearchResult();
+    			navigateToPoint(result.coordinates);
+    		}
+    	}
 	}
 
 	@Override
 	protected void onNewIntent(Intent intent) {
 		super.onNewIntent(intent);
-		if (map.isLoaded()) {
-			if (SBAApplication.getSearchResult() != null) {
-				SearchResult result = intent.getParcelableExtra(SearchListActivity.SEARCH_RESULT);
-				navigateToPoint(result.coordinates);
-			}
-		}
+		myIntent = intent;
+		
+//		Runnable r = new Runnable() {
+//			
+//			@Override
+//			public void run() {
+//				if (map.isLoaded()) {
+//		    		if (SBAApplication.getSearchResult() != null) {
+//		    			SearchResult result = myIntent.getParcelableExtra(SearchListActivity.SEARCH_RESULT);
+//		    			navigateToPoint(result.coordinates);
+//		    		}
+//            	}
+//			}
+//		};
+//		
+//		runOnUiThread(r);
+	
+		    
 	}
 
 	@Override
@@ -322,6 +350,7 @@ public class SBASitesActivity extends GDActivity {
 			map.addLayer(dynamicLayer);
 			
 			dynamicLayer.refresh();
+			map.invalidate();
 		}
 	}
 
@@ -344,6 +373,7 @@ public class SBASitesActivity extends GDActivity {
 
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
+				map.getCallout().hide();
 				showSiteDetails();
 				return false;
 			}

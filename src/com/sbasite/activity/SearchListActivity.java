@@ -61,9 +61,9 @@ public class SearchListActivity extends ListActivity implements LoadSearchResult
 		SearchResult result = listAdapter.getItem(position); 
 		if (null != result) {
 			SBAApplication.setSearchResult(result);
-			Intent intent = new Intent(this, SBASitesActivity.class);
-			intent.putExtra(SEARCH_RESULT, result);
-			startActivity(intent);
+//			Intent intent = new Intent(this, SBASitesActivity.class);
+//			intent.putExtra(SEARCH_RESULT, result);
+//			startActivity(intent);
 		}
 		finish();
 	}
