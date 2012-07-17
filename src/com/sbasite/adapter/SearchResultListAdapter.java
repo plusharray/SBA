@@ -2,7 +2,7 @@ package com.sbasite.adapter;
 
 import java.util.ArrayList;
 
-import com.sbasite.R;
+import com.sbasite.sbasites.R;
 import com.sbasite.model.SearchResult;
 import com.sbasite.view.SearchResultItem;
 

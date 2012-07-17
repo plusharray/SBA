@@ -1,6 +1,6 @@
 package com.sbasite.model;
 
-import com.sbasite.R;
+import com.sbasite.sbasites.R;
 
 public class SBALayer {
 

@@ -1,7 +1,7 @@
 package com.sbasite.adapter;
 
 import com.esri.core.tasks.ags.identify.IdentifyResult;
-import com.sbasite.R;
+import com.sbasite.sbasites.R;
 import com.sbasite.view.SiteListItem;
 
 import android.content.Context;

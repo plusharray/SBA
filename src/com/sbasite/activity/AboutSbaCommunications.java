@@ -1,6 +1,6 @@
 package com.sbasite.activity;
 
-import com.sbasite.R;
+import com.sbasite.sbasites.R;
 
 import android.app.Activity;
 import android.os.Bundle;
