@@ -1,6 +1,6 @@
 package com.sbasite.sbasites.view;
 
-import com.sbasite.R;
+import com.sbasite.sbasites.R;
 import com.sbasite.sbasites.model.SearchResult;
 
 import android.content.Context;

@@ -1,7 +1,7 @@
 package com.sbasite.sbasites.view;
 
 import com.esri.core.tasks.ags.identify.IdentifyResult;
-import com.sbasite.R;
+import com.sbasite.sbasites.R;
 import com.sbasite.sbasites.model.SBALayer;
 
 import android.content.Context;

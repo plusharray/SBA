@@ -38,7 +38,7 @@ import com.esri.core.geometry.Unit;
 import com.esri.core.tasks.ags.identify.IdentifyParameters;
 import com.esri.core.tasks.ags.identify.IdentifyResult;
 import com.esri.core.tasks.ags.identify.IdentifyTask;
-import com.sbasite.R;
+import com.sbasite.sbasites.R;
 import com.sbasite.sbasites.app.SBAApplication;
 import com.sbasite.sbasites.model.SearchResult;
 

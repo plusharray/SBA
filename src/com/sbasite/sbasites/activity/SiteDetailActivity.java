@@ -6,7 +6,7 @@ import java.util.Map;
 
 import com.esri.core.geometry.Point;
 import com.esri.core.tasks.ags.identify.IdentifyResult;
-import com.sbasite.R;
+import com.sbasite.sbasites.R;
 import com.sbasite.sbasites.model.Site;
 import com.sbasite.sbasites.task.LoadImageAsyncTask;
 import com.sbasite.sbasites.task.LoadImageAsyncTask.LoadImageAsyncTaskResponder;

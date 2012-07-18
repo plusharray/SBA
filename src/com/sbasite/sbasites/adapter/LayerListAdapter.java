@@ -2,7 +2,7 @@ package com.sbasite.sbasites.adapter;
 
 import java.util.ArrayList;
 
-import com.sbasite.R;
+import com.sbasite.sbasites.R;
 import com.sbasite.sbasites.model.SBALayer;
 import com.sbasite.sbasites.view.LayerListItemView;
 

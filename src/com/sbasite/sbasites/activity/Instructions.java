@@ -1,6 +1,6 @@
 package com.sbasite.sbasites.activity;
 
-import com.sbasite.R;
+import com.sbasite.sbasites.R;
 
 import android.app.Activity;
 import android.content.Intent;
