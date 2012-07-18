@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.sbasite.view.SiteListItem xmlns:android="http://schemas.android.com/apk/res/android"
+<com.sbasite.sbasites.view.SiteListItem xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/list_item_background">
@@ -25,4 +25,4 @@
     	android:layout_below="@+id/site_site_name"
     	android:layout_toRightOf="@id/site_pin_icon" 
     	android:paddingBottom="6sp" />
-</com.sbasite.view.SiteListItem>
+</com.sbasite.sbasites.view.SiteListItem>
