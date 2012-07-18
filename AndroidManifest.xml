@@ -10,7 +10,7 @@
 		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 <uses-feature android:glEsVersion="0x00020000" android:required="true"/> 
-    <application android:icon="@drawable/ic_72x72" android:theme="@style/Theme.GDCatalog" android:label="@string/app_name" android:name="com.sbasite.app.SBAApplication">
+    <application android:icon="@drawable/ic_72x72" android:theme="@style/Theme.GDCatalog" android:label="@string/app_name" android:name=".sbasites.app.SBAApplication">
         <activity android:name="com.sbasite.activity.SBASitesActivity"
                   android:label="@string/app_name"
                   android:screenOrientation="portrait" android:launchMode="singleTask">
@@ -61,7 +61,7 @@
 			<meta-data android:name="android.app.default_searchable"
 				android:value=".activity.SearchListActivity" />
 		</activity>
-		<activity android:label="Site Image" android:name="com.sbasite.activity.SiteImageViewActivity"
+		<activity android:label="Site Image" android:name=".sbasites.activity.SiteImageViewActivity"
 			android:screenOrientation="portrait">
 		</activity>
     </application>
